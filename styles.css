@@ -1,0 +1,97 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  h1, h2, h3 {
+    color: #24292e;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  /* .s-navigation .s-navigation--item {
+    background-color: var(--_na-item-bg);
+    color: var(--_na-item-fc);
+    font: unset;
+    font-size: var(--_na-item-fs);
+    padding: var(--_na-item-p);
+    white-space: var(--_na-item-ws);
+    align-items: center;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    user-select: auto
+  } */
+
+
+  /* Styles for the custom navigation bar */
+#customNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #f48024;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  #customNavBar img {
+    height: 40px;
+  }
+  
+  #customNavBar .rightContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  #customNavBar .rightContainer div {
+    margin-right: 20px;
+  }
+  
+  #customNavBar input[type="text"] {
+    padding-left: 30px; /* Space for the search icon */
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  #customNavBar .s-topbar--item {
+    margin-left: 10px;
+  }
+  
+  #customNavBar .s-activity-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  
+  #customNavBar .svg-icon {
+    width: 20px;
+    height: 18px;
+  }
