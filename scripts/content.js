@@ -26,7 +26,7 @@ if (!document.getElementById("customNavBar")) {
   navImage.alt = "StackOverflow Logo";
   navImage.style.height = "40px"; // Adjust as needed
   navImage.style.margin = "10px"; // Center the image vertically in the bar
-
+  navImage.style.marginLeft = "75px";
   // Add the image to the navigation bar
   navBar.appendChild(navImage);
 
@@ -34,7 +34,7 @@ if (!document.getElementById("customNavBar")) {
   const rightContainer = document.createElement("div");
   rightContainer.style.display = "flex"; // Use flex to arrange elements in a row
   rightContainer.style.alignItems = "center"; // Vertically center the elements in rightContainer
-  rightContainer.style.marginRight = "200px"; // Add some space between the logo and right container
+  rightContainer.style.marginRight = "30px"; // Add some space between the logo and right container
 
   // Add "Products" and "OverflowAI" text
   const text1 = document.createElement("span");
@@ -83,11 +83,30 @@ if (!document.getElementById("customNavBar")) {
   rightIcon.style.transform = "translateY(-50%)"; // Center the icon vertically
   searchBar.appendChild(rightIcon);
 
+
+  // rightContainer.style.backgroundColor = "#ff0000";
   // Add the search bar to the right container
   rightContainer.appendChild(searchBar);
 
   // Add the right container to the navigation bar
   navBar.appendChild(rightContainer);
+
+
+
+
+
+  // Add a new image to the right of the right container
+  const newImage = document.createElement("img");
+  newImage.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eaad2b46-555a-401e-b221-a113a9a3fc72/dioawgo-5448b1ce-5057-4598-9195-214294f8f866.png/v1/fill/w_278,h_58,q_80,strp/ad7_by_happytompson_dioawgo-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTgiLCJwYXRoIjoiXC9mXC9lYWFkMmI0Ni01NTVhLTQwMWUtYjIyMS1hMTEzYTlhM2ZjNzJcL2Rpb2F3Z28tNTQ0OGIxY2UtNTA1Ny00NTk4LTkxOTUtMjE0Mjk0ZjhmODY2LnBuZyIsIndpZHRoIjoiPD0yNzgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Z9c4SoU_jrG9Xj_fqHxWH5vZVrCrKmnvp5JKkdwgfFI"; // Replace with your image URL
+  newImage.alt = "New Image";
+  newImage.style.height = "40px"; // Adjust as needed
+  newImage.style.marginLeft = "2px"; // Add some margin to the left
+  navBar.appendChild(newImage);
+
+
+
+
+
 
   // Append the navigation bar to the body of the page
   document.body.prepend(navBar);
@@ -259,6 +278,24 @@ if(!document.getElementById("observer2")){
   // Start observing the body element for new additions
   observer2.observe(document.body, config2);
 
+}
+
+
+
+if(!document.getElementById("staticImage")){
+  // Create an image element
+  const staticImage = document.createElement("img");
+  staticImage.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eaad2b46-555a-401e-b221-a113a9a3fc72/dioawgy-e30eaa22-72c1-47f9-bd1b-7eb9bfb285de.png/v1/fit/w_446,h_730,q_70,strp/ad6_by_happytompson_dioawgy-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMwIiwicGF0aCI6IlwvZlwvZWFhZDJiNDYtNTU1YS00MDFlLWIyMjEtYTExM2E5YTNmYzcyXC9kaW9hd2d5LWUzMGVhYTIyLTcyYzEtNDdmOS1iZDFiLTdlYjliZmIyODVkZS5wbmciLCJ3aWR0aCI6Ijw9NDQ2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.GvCg3u5XUqPyXmNkDZfT-B6qxWB1ygsOHyDdMTmM47Q"; // Replace with your image URL
+  staticImage.alt = "Static Image";
+  staticImage.style.position = "fixed"; // Fix the image position
+  staticImage.style.left = "90px"; // Left margin
+  staticImage.style.bottom = "5px"; // Bottom margin
+  staticImage.style.zIndex = "1000"; // Ensure it's above other elements
+  staticImage.style.width = "230px"; // Adjust width as needed
+  staticImage.style.height = "auto"; // Maintain aspect ratio
+
+  // Add the image to the document body
+  document.body.appendChild(staticImage);
 }
 
 
