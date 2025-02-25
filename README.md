@@ -6,11 +6,11 @@ Example:
 
 Before:
 
-![](\images\1.jpg)
+![](/images/1.jpg)
 
 After:
 
-![](\images\2.jpg)
+![](/images/2.jpg)
 
 ## Run
 
