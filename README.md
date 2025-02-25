@@ -6,11 +6,11 @@ Example:
 
 Before:
 
-![](F:\USC\13-CSCI-550\chatgpt-in-disguise\chatgpt-in-disguise\images\1.jpg)
+![](\images\1.jpg)
 
 After:
 
-![](F:\USC\13-CSCI-550\chatgpt-in-disguise\chatgpt-in-disguise\images\2.jpg)
+![](\images\2.jpg)
 
 ## Run
 
